@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Results portal | Rockfield Schools</title>
+<link rel="icon" href="images/logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/results.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<a class="brand" href="index.html"><img src="images/logo.png" alt="" width="136" height="150"><span>Rockfield Schools</span></a>
+<nav aria-label="Main"><a href="index.html">Home</a><a href="check-result.html">Check result</a><a href="#" id="lo" hidden>Sign out</a></nav>
+</div>
+</header>
+<div id="gate" class="gate"></div>
+<main class="wrap portal" id="app" hidden>
+<h1>Results portal</h1>
+<p class="lead">Enter scores, print each pupil’s result for the term, and print the three-term cumulative for promotion. Everything is saved in this browser, so use Backup in Settings to keep a copy.</p>
+<div class="ctl">
+<label>Session<input id="ses" size="9"></label>
+<label>Term<select id="term"><option value="1">1st Term</option><option value="2">2nd Term</option><option value="3">3rd Term</option></select></label>
+<label>Class<select id="cls"></select></label>
+</div>
+<div class="tabs">
+<button data-a="tab" data-i="students">Students</button>
+<button data-a="tab" data-i="scores">Enter scores</button>
+<button data-a="tab" data-i="skills">Skills &amp; comments</button>
+<button data-a="tab" data-i="term">Term results</button>
+<button data-a="tab" data-i="cum">Cumulative</button>
+<button data-a="tab" data-i="pub" data-adm>Publish</button>
+<button data-a="tab" data-i="users" data-adm>Accounts</button>
+<button data-a="tab" data-i="settings" data-adm>Settings</button>
+</div>
+<div id="panel"></div>
+</main>
+<div id="sheet"></div>
+<script src="js/rfcrypto.js"></script>
+<script src="js/results.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

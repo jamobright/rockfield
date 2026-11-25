@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Check result | Rockfield Schools</title>
+<link rel="icon" href="images/logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/results.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<a class="brand" href="index.html"><img src="images/logo.png" alt="" width="136" height="150"><span>Rockfield Schools</span></a>
+<nav aria-label="Main"><a href="index.html">Home</a><a href="check-result.html">Check result</a></nav>
+</div>
+</header>
+<main class="wrap portal">
+<h1>Check your result</h1>
+<p class="lead">Enter the student code and PIN printed on your result slip, then print your result.</p>
+<form id="f" class="gbox" style="margin:0">
+<label>Student code<input id="code" placeholder="RF-XXXXXX" autocomplete="off" required></label>
+<label>PIN<input id="pin" type="password" placeholder="XXXXX-XXXXX" autocomplete="off" required></label>
+<button class="btn" type="submit">View result</button>
+<p class="err" id="msg" role="alert"></p>
+</form>
+</main>
+<div id="out" class="wrap"></div>
+<script src="js/rfcrypto.js"></script>
+<script src="js/check-result.js"></script>
+</body>
+</html>
